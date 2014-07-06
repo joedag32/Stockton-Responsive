@@ -20,23 +20,19 @@ body {
 	margin: 0;
 }
 #logo {
+	text-align: center;
 	background-color: #000;
 }
 #stories-switcher {
 	display: none;
 }
-#footer {
-	background-color: #000;
-}
 @media (min-width: 768px) {
 	#logo {
+		text-align: left;
 		background: none;
 	}
 	#stories-switcher {
 		display: block;
-	}
-	#footer {
-		background: none;
 	}
 }
 </style>
@@ -51,6 +47,19 @@ body {
 	<script type="text/javascript" src="http://intraweb.stockton.edu/eyos/hp/scripts/jquery.cycle.js"></script>
 	<script type="text/javascript" src="http://intraweb.stockton.edu/eyos/hp/scripts/jquery.init.js"></script>
 
+<script type="text/javascript">
+$(window).ready(function() {
+	mobileInit();
+});
+$(window).resize(function() {	
+	if ($("#logo").css("text-align") == "center") {
+		mobileInit();
+	}
+});
+function mobileInit() {
+  alert('hi');
+}
+</script>
 
 </head>
 <body  class="home" >
