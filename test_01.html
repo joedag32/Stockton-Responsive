@@ -23,25 +23,55 @@ body {
 	text-align: center;
 	background-color: #000;
 }
+#logo img {
+	width: 143px;
+	height: 60px;
+}
 #stories-switcher {
 	display: none;
 }
 #mobile-nav-bar {
 	padding: 10px;
-	background-color: #63B1E5;
+	background: #63B1E5;
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #71bff3),
+		color-stop(1, #63B1E5)
+	);
+	background: -o-linear-gradient(bottom, #71bff3 0%, #63B1E5 100%);
+	background: -moz-linear-gradient(bottom, #71bff3 0%, #63B1E5 100%);
+	background: -webkit-linear-gradient(bottom, #71bff3 0%, #63B1E5 100%);
+	background: -ms-linear-gradient(bottom, #71bff3 0%, #63B1E5 100%);
+	background: linear-gradient(to bottom, #71bff3 0%, #63B1E5 100%);
+	border-bottom: 3px solid #fdc82f;
 }
 #mobile-nav-bar span {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
 	margin: 6px;
 	text-indent: -9999em;
+	border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
 	border: 1px solid #00549F;
 }
 .hide {
 	display: none;
 }
+#top-nav, #search, #nav {
+	background-color: #f0f0f0;
+}
 @media (min-width: 768px) {
 	#logo {
 		text-align: left;
 		background: none;
+	}
+	#logo img {
+		height: auto;
+		width: auto;
 	}
 	#stories-switcher {
 		display: block;
@@ -75,6 +105,7 @@ $(window).resize(function() {
 function mobileInit() {
 	if(!$('#mobile-nav-bar').length) {
   		$('#logo').after('<div id="mobile-nav-bar"><span id="mobile-nav-btn">Navigation</span><span id="mobile-search-btn">Site Search</span><span id="mobile-go-btn"><a href="https://intraweb.stockton.edu/eyos/page.cfm?siteID=160&pageID=1">go Stockton portal login</a></span></div>');
+  		$('#top-nav').insertAfter('#nav');
   	}
   	$('#top-nav, #top-go, #search, #nav').addClass('hide');
   	$('#mobile-nav-btn').click(function() {
@@ -87,6 +118,7 @@ function mobileInit() {
 	});
 }
 function mobileClear() {
+	$('#top-nav').insertAfter('#logo');
 	$('#mobile-nav-bar').remove();
 	$('#top-nav, #top-go, #search, #nav').removeClass('hide');
 }
