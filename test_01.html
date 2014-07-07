@@ -26,6 +26,18 @@ body {
 #stories-switcher {
 	display: none;
 }
+#mobile-nav-bar {
+	padding: 10px;
+	background-color: #63B1E5;
+}
+#mobile-nav-bar span {
+	margin: 6px;
+	text-indent: -9999em;
+	border: 1px solid #00549F;
+}
+.hide {
+	display: none;
+}
 @media (min-width: 768px) {
 	#logo {
 		text-align: left;
@@ -49,15 +61,34 @@ body {
 
 <script type="text/javascript">
 $(window).ready(function() {
-	mobileInit();
-});
-$(window).resize(function() {	
-	if ($("#logo").css("text-align") == "center") {
+	if ($('#logo').css('text-align') == 'center') {
 		mobileInit();
 	}
 });
+$(window).resize(function() {	
+	if ($('#logo').css('text-align') == 'center') {
+		mobileInit();
+	} else {
+		mobileClear();
+	}
+});
 function mobileInit() {
-  alert('hi');
+	if(!$('#mobile-nav-bar').length) {
+  		$('#logo').after('<div id="mobile-nav-bar"><span id="mobile-nav-btn">Navigation</span><span id="mobile-search-btn">Site Search</span><span id="mobile-go-btn"><a href="https://intraweb.stockton.edu/eyos/page.cfm?siteID=160&pageID=1">go Stockton portal login</a></span></div>');
+  	}
+  	$('#top-nav, #top-go, #search, #nav').addClass('hide');
+  	$('#mobile-nav-btn').click(function() {
+  		$('#search').addClass('hide');
+  		$('#top-nav, #nav').toggleClass('hide');
+	});
+	$('#mobile-search-btn').click(function() {
+		$('#top-nav, #nav').addClass('hide');
+  		$('#search').toggleClass('hide');
+	});
+}
+function mobileClear() {
+	$('#mobile-nav-bar').remove();
+	$('#top-nav, #top-go, #search, #nav').removeClass('hide');
 }
 </script>
 
