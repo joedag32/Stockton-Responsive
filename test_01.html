@@ -18,6 +18,7 @@
 <style>
 body {
 	margin: 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 #logo {
 	padding-top: 4px;
@@ -46,6 +47,7 @@ body {
 	border: 1px solid #00549F;
 }
 #mobile-nav-bar #mobile-nav-btn {
+	z-index: 500;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -54,6 +56,7 @@ body {
 	border: none;
 }
 #mobile-nav-bar #mobile-search-btn {
+	z-index: 500;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -62,6 +65,7 @@ body {
 	border: none;
 }
 #mobile-nav-bar #mobile-go-btn {
+	z-index: 500;
 	position: absolute;
 	top: 0;
 	right: 48px;
@@ -75,6 +79,73 @@ body {
 #top-nav, #search, #nav {
 	background-color: #f0f0f0;
 }
+#top-nav ul, #nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-color: #f7f7f7;
+	border-top: 1px solid #d9d9d9;
+}
+#top-nav ul li, #nav ul li {
+	padding: 16px 20px;
+	border-bottom: 1px solid #d9d9d9
+}
+#footer-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-color: #f7f7f7;
+	border-top: 1px solid #d9d9d9;
+}
+#footer-nav ul li {
+	padding: 16px 20px;
+	border-bottom: 1px solid #d9d9d9;
+}
+#footer-left img {
+	margin: 6px 8px 6px 6px;
+}
+#footer-left p#mission-statement {
+	float: right;
+	font-family: Georgia,times,serif;
+	font-style: italic;
+}
+#footer-left img[name="USnews"] {
+	display: none;
+}
+#footer-right {
+	clear: both;
+}
+#footer-right #address {
+	text-align: center;
+}
+#footer-right > img {
+	display: none;
+}
+#footer-right #go-stockton {
+	float: right;
+}
+#footer-right #social-links {
+	text-align: left;
+}
+#footer-right #social-links ul {
+	padding: 0;
+	list-style: none;
+}
+#footer-right #social-links li {
+	display: inline;
+	padding: 10px;
+}
+#footer-right #nj-green-college p {
+	width: 45%;
+	float: left;
+	padding: 0 10px;
+	text-align: left;
+}
+#footer-end {
+	font-size: 85%;
+	text-align: center;
+	color: #bfbfbf;
+}
 @media (min-width: 768px) {
 	#logo {
 		padding: 0;
@@ -85,9 +156,44 @@ body {
 		height: auto;
 		width: auto;
 	}
+	#top-nav ul, #nav ul {
+		background-color: initial;
+		border-top: none;
+	}
+	#top-nav ul li, #nav ul li {
+		border-bottom: none;
+	}
 	#stories-switcher {
 		display: block;
 	}
+	#footer-nav ul {
+		background: none;
+		border: none;
+	}
+	#footer-nav ul li {
+		border: none;
+	}
+	#footer-left img[name="USnews"] {
+		display: initial;
+	}
+	#footer-left img {
+		display: initial;
+	}
+	#footer-right {
+		clear: none;
+	}
+	#footer-right #address {
+		text-align: left;
+	}
+	#footer-right img {
+		display: initial;
+	}
+	#footer-right #nj-green-college p {
+	width: auto;
+	float: none;
+	padding: 0;
+	text-align: right;
+}
 }
 </style>
      
@@ -119,7 +225,7 @@ function mobileInit() {
   		$('#logo').after('<div id="mobile-nav-bar"><span id="mobile-nav-btn">Navigation</span><span id="mobile-search-btn">Site Search</span><span id="mobile-go-btn"><a href="https://intraweb.stockton.edu/eyos/page.cfm?siteID=160&pageID=1">go Stockton portal login</a></span></div>');
   		$('#top-nav').insertAfter('#nav');
   	}
-  	$('#top-nav, #top-go, #search, #nav').addClass('hide');
+  	$('#top-nav, #top-go, #search, #nav, #top-bg').addClass('hide');
   	$('#mobile-nav-btn').click(function() {
   		$('#search').addClass('hide');
   		$('#top-nav, #nav').toggleClass('hide');
@@ -132,7 +238,7 @@ function mobileInit() {
 function mobileClear() {
 	$('#top-nav').insertAfter('#logo');
 	$('#mobile-nav-bar').remove();
-	$('#top-nav, #top-go, #search, #nav').removeClass('hide');
+	$('#top-nav, #top-go, #search, #nav, #top-bg').removeClass('hide');
 }
 </script>
 
