@@ -1,0 +1,516 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/strict.dtd"> 
+<html>
+<head>
+<title>Development and Foundation - Campaign Celebration</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script language="javascript" src="http://intraweb.stockton.edu/eyos/globals/applications/includes/commonscripts.js"></script>
+
+
+<link rel="shortcut icon" href="http://intraweb.stockton.edu/eyos/hp/images/favicon.ico" /> 
+
+	
+<style>
+body {
+	margin: 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+#logo {
+	padding-top: 4px;
+	text-align: center;
+	background-color: #000;
+}
+#logo img {
+	width: 143px;
+	height: 60px;
+}
+#mobile-nav-bar {
+	border-bottom: 3px solid #fdc82f;
+}
+#mobile-nav-bar span {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 6px;
+	text-indent: -9999em;
+	border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	border: 1px solid #00549F;
+}
+#mobile-nav-bar #mobile-nav-btn {
+	z-index: 500;
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	background: url(images/mobile_nav_icon_48.png) no-repeat top left;
+	border: none;
+}
+#mobile-nav-bar #mobile-search-btn {
+	z-index: 500;
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	background: url(images/mobile_search_icon_48.png) no-repeat top left;
+	border: none;
+}
+#mobile-nav-bar #mobile-go-btn {
+	z-index: 500;
+	position: absolute;
+	top: 0;
+	right: 48px;
+	cursor: pointer;
+	background: url(images/mobile_go_icon_48.png) no-repeat top left;
+	border: none;
+}
+.hide {
+	display: none;
+}
+#top-nav, #search, #nav {
+	background-color: #f0f0f0;
+}
+#top-nav ul, #nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-color: #f7f7f7;
+	border-top: 1px solid #d9d9d9;
+}
+#top-nav ul li, #nav ul li {
+	padding: 16px 20px;
+	border-bottom: 1px solid #d9d9d9
+}
+
+#celebrate-hd {
+	height: 100px;
+	background-color: #ff0000;
+}
+#celebrate-message {
+	text-align: center;
+}
+#celebrate-video {
+	position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+#celebrate-video iframe {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#footer-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-color: #f7f7f7;
+	border-top: 1px solid #d9d9d9;
+}
+#footer-nav ul li {
+	padding: 16px 20px;
+	border-bottom: 1px solid #d9d9d9;
+}
+#footer-left img {
+	margin: 6px 8px 6px 6px;
+}
+#footer-left p#mission-statement {
+	float: right;
+	font-family: Georgia,times,serif;
+	font-style: italic;
+}
+#footer-left img[name="USnews"] {
+	display: none;
+}
+#footer-right {
+	clear: both;
+}
+#footer-right #address {
+	text-align: center;
+}
+#footer-right > img {
+	display: none;
+}
+#footer-right #go-stockton {
+	float: right;
+}
+#footer-right #social-links {
+	text-align: left;
+}
+#footer-right #social-links ul {
+	padding: 0;
+	list-style: none;
+}
+#footer-right #social-links li {
+	display: inline;
+	padding: 10px;
+}
+#footer-right #nj-green-college p {
+	width: 45%;
+	float: left;
+	padding: 0 10px;
+	text-align: left;
+}
+#footer-end {
+	font-size: 85%;
+	text-align: center;
+	color: #bfbfbf;
+}
+@media (min-width: 768px) {
+	#logo {
+		padding: 0;
+		text-align: left;
+		background: none;
+	}
+	#logo img {
+		height: auto;
+		width: auto;
+	}
+	#top-nav ul, #nav ul {
+		background-color: initial;
+		border-top: none;
+	}
+	#top-nav ul li, #nav ul li {
+		border-bottom: none;
+	}
+	
+	#celebrate-message {
+		float: left;
+		width: 50%;
+		text-align: left;
+	}
+	#celebrate-documents {
+		margin-left: 50%;
+	}
+	
+	#footer-nav ul {
+		background: none;
+		border: none;
+	}
+	#footer-nav ul li {
+		border: none;
+	}
+	#footer-left img[name="USnews"] {
+		display: initial;
+	}
+	#footer-left img {
+		display: initial;
+	}
+	#footer-right {
+		clear: none;
+	}
+	#footer-right #address {
+		text-align: left;
+	}
+	#footer-right img {
+		display: initial;
+	}
+	#footer-right #nj-green-college p {
+	width: auto;
+	float: none;
+	padding: 0;
+	text-align: right;
+}
+}
+</style>
+     
+<link href="http://intraweb.stockton.edu/eyos/development_and_foundation/css/mainstyle.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 768px)" />
+<link media="print" href="http://intraweb.stockton.edu/eyos/development_and_foundation/css/print.css" type="text/css" rel="stylesheet" />
+
+<!--[if lt IE 8]>
+	<link href="http://intraweb.stockton.edu/eyos/development_and_foundation/css/ie7.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<script type="text/javascript" src="http://intraweb.stockton.edu/eyos/responsive/scripts/jquery-1.7.2.min.js"></script>
+
+	
+<script type="text/javascript">
+$(window).ready(function() {
+	if ($('#logo').css('text-align') == 'center') {
+		mobileInit();
+	}
+});
+$(window).resize(function() {
+	if ($('#logo').css('text-align') == 'center') {
+		mobileInit();
+	} else {
+		mobileClear();
+	}
+});
+function mobileInit() {
+	if(!$('#mobile-nav-bar').length) {
+  		$('#logo').after('<div id="mobile-nav-bar"><span id="mobile-nav-btn">Navigation</span><span id="mobile-search-btn">Site Search</span><span id="mobile-go-btn"><a href="https://intraweb.stockton.edu/eyos/page.cfm?siteID=160&pageID=1">go Stockton portal login</a></span></div>');
+  		$('#top-nav').insertAfter('#nav');
+  		// celebrate campaign init function
+  		celebrateCampaignInit();
+  	}
+  	$('#top-nav, #top-go, #search, #nav, #top-bg').addClass('hide');
+  	$('#mobile-nav-btn').click(function() {
+  		$('#search').addClass('hide');
+  		$('#top-nav, #nav').toggleClass('hide');
+	});
+	$('#mobile-search-btn').click(function() {
+		$('#top-nav, #nav').addClass('hide');
+  		$('#search').toggleClass('hide');
+	});
+}
+function mobileClear() {
+	$('#top-nav').insertAfter('#logo');
+	$('#mobile-nav-bar').remove();
+	$('#top-nav, #top-go, #search, #nav, #top-bg').removeClass('hide');
+	// celebrate campaign clear function
+	celebrateCampaignClear();
+}
+
+// Celebrate Campaign scripts
+function celebrateCampaignInit() {
+	$('#sub-top, #side-nav').insertAfter('#bottom .wrap');
+}
+function celebrateCampaignClear() {
+	$('#sub-top').insertAfter('#top');
+	$('#bottom .left').prepend($('#side-nav'));
+}
+</script>
+
+</head>
+<body>
+
+   <!-- Begin page content -->
+		<!-- design Global Header Include -->
+		<!-- Changed Absolute Links to relative per issue cited By Dan Gambert 1/15/2013 DMV  -->
+
+<!--Toothbrush Bar-->
+
+   <div id="top">
+   <div class="wrap clearfix">
+   
+   		<div id="logo"><a href="http://intraweb.stockton.edu/eyos/page.cfm?siteID=197&pageID=5&layout=hp" target="_top"><img src="http://intraweb.stockton.edu/eyos/uniheadfoot/Stockton_Distinctive_internal.png" width="263" height="110" alt="Return to Stockton College Home Page" /></a></div>
+   		
+   		<div id="top-nav" class="clearfix">
+   			<ul class="clearfix">
+   				<li><a href="http://intraweb.stockton.edu/eyos/page.cfm?siteID=197&pageID=23" target="_top">Apply</a></li>
+   				<li><a href="http://intraweb.stockton.edu/eyos/page.cfm?siteID=80&pageID=34" target="_top">Give</a></li>
+   				<li><a href="http://intraweb.stockton.edu/eyos/page.cfm?siteID=58&pageID=1&action=home" target="_top">Contact/Directory</a></li>
+   				<li><a href="http://intraweb.stockton.edu/eyos/page.cfm?siteID=197&pageID=50" target="_top">A-Z Index</a></li>
+   				<li><a href="http://intraweb.stockton.edu/eyos/page.cfm?siteID=38&pageID=1" target="_top">Calendars</a></li>
+   			</ul>
+   		</div>
+   		
+<!--/ Toothbrush Bar-->   		
+   		
+ <!--Search box-->  		
+   		<div id="top-go"><a href="http://intraweb.stockton.edu/eyos/page.cfm?siteID=160&pageID=1"><img src="http://intraweb.stockton.edu/eyos/uniheadfoot/top-go.png" width="80" height="32" alt="Go" /></a></div>
+   		
+   		<div id="search" class="clearfix">
+   			<form action="/eyos/keyword_google.cfm" method="post" target="_top">
+
+   				<input type="text" value="Search"  name="keyword" class="input" onClick="this.value='';" onFocus="this.select()" onBlur="this.value=!this.value?'Search':this.value;" />
+   				<input type="submit" value="" class="submit" />
+                 <input type="hidden" name="ie" value="UTF-8" />
+   			</form>    		
+   		</div>
+ <!--End Search Box-->
+ 
+		<!-- end design Global Header Include -->
+
+    <!-- design header 1 -->
+    <!-- PRIMARY NAVIGATION BAR -->
+<div id="nav" class="clearfix">
+   			   			<ul class="clearfix">
+   				<li class="active1"><a href="/eyos/page.cfm?siteID=221&pageID=42">Ways to Give</a></li>
+   				<li class="active2"><a href="/eyos/page.cfm?siteID=221&pageID=36">Student Testimonials</a></li>
+   				<li class="active3"><a href="/eyos/page.cfm?siteID=221&pageID=9">Campaign Information</a></li>
+   				<li class="active4"><a href="/eyos/page.cfm?siteID=221&pageID=3">Foundation</a></li>
+   				<li class="active5"><a href="/eyos/page.cfm?siteID=221&pageID=2">Alumni Affairs</a></li>
+   				<li class="active6"><a href="/eyos/page.cfm?siteID=221&pageID=38">Foundation Scholarships</a></li>
+   			    <li class="active7 last"><a href="/eyos/page.cfm?siteID=221&pageID=1">Support Stockton</a></li>
+   			      			</ul>    		</div>
+
+   		<!-- END PRIMARY NAVIGATION BAR -->
+
+    </div><!--/ .wrap -->
+</div><!--/ #top -->
+
+<!--Start Gray Bar -->
+<div id="sub-top">
+   <div class="wrap clearfix"> 
+    <!-- end design header 1 -->
+    
+    <!-- site header -->
+    
+    <!-- end site header -->
+    
+    <!-- section header -->
+    
+    <!-- end section header -->
+    
+    <!-- design header 2 -->
+    <!--Wordmark-->	
+    <div class="wordmark"><a href="/eyos/page.cfm?siteID=221&pageID=1"><img src="http://intraweb.stockton.edu/eyos/development_and_foundation/images/you-make-the-diff-horz.png" width="260" height="65" alt="You Make the Difference: The Campaign for Stockton College" border="0"></a></div>
+    <!--/Wordmark-->
+		
+		
+   
+  </div><!--/ .wrap -->
+</div><!--/ #sub-top -->
+
+
+<div id="bottom">
+   <div class="wrap">
+   
+   		
+   		
+   			<div class="column left">
+				
+				<div id="side-nav">
+				
+					<div class="nav-title">The Campaign for Stockton College</div>
+					
+		  <ul>
+		          <li><a href="/eyos/page.cfm?siteID=221&pageID=9">Campaign</a></li>
+                          <li><a href="/eyos/page.cfm?siteID=221&pageID=101">Give Now</a></li>
+                          <li><a href="/eyos/page.cfm?siteID=221&pageID=85">Events</a></li>
+                          <li><a href="/eyos/page.cfm?siteID=221&pageID=34">Richard Stockton Society</a></li>
+			  			  <li><a href="/eyos/page.cfm?siteID=221&pageID=86">Annual Giving Opportunities</a></li>
+ <li><a href="/eyos/page.cfm?siteID=221&pageID=90">Endowment Giving Opportunities</a></li>
+ <li><a href="/eyos/page.cfm?siteID=221&pageID=89">Scholarship Giving Opportunities</a></li>
+ <li><a href="/eyos/page.cfm?siteID=221&pageID=210">The Pappas Visiting Scholar Series</a></li>
+			  <li><a href="/eyos/page.cfm?siteID=221&pageID=62">About the Foundation</a></li> 
+			  <li><a href="/eyos/page.cfm?siteID=221&pageID=87">Foundation Policies</a></li>
+ <li><a href="/eyos/page.cfm?siteID=221&pageID=40">Contact Us</a></li>
+
+<li><a href="/eyos/page.cfm?siteID=221&pageID=101"><img src="http://intraweb.stockton.edu/eyos/development_and_foundation/images/banners/Web-banner_Vertical_give-now.jpg" width="125" height="150" alt="Give Now" border="0"></a>
+</li>
+
+<li><a href="/eyos/page.cfm?siteID=221&pageID=1"><img src="http://intraweb.stockton.edu/eyos/development_and_foundation/images/you-make-the-diff-vert.jpg" width="125" height="160" alt="You Make the Difference" border="0"></a></li>
+
+</ul>
+			 <!---<li><a href="/eyos/page.cfm?siteID=201&pageID=23">Monthly Newsletter</a></li>-->
+                         <!---<li><a href="http://digital.turn-page.com/issue/12296" target="_blank">Stockton Now E-zine</a></li> -->
+                         <!---<li><a href="http://intraweb.stockton.edu/eyos/page.cfm?siteID=178&pageID=8&action=press" target="_blank">Press Releases</a></li> -->
+			 <!---<li><a href="/eyos/page.cfm?siteID=178&pageID=1" target="_blank">External Affairs</a></li> -->
+		  </ul>						
+				</div><!--/ #side-nav -->
+   				
+   			</div><!--/ .column.left -->
+   			
+   			<div id="main"> 
+    <!-- end design header 2 -->
+    
+    <!-- page header -->
+    
+    <!-- end page header -->
+    <!-- page content or wizard -->
+    
+      <!-- page content -->
+      
+      		<div id="celebrate-hd"></div>
+      		<div id="celebrate-message">
+      			<p>Campaign Celebration brief message.</p> 
+      		</div>
+      		<div id="celebrate-documents">
+      			<ul>
+      				<li><a href="#">See the Impact</a></li>
+      				<li><a href="#">Hear How it Happened</a></li>
+      				<li><a href="#">Meet our Donors</a></li>
+      			</ul>
+      		</div>
+      		<div id="celebrate-video">
+      			<iframe src="http://www.youtube.com/embed/s1LitGyMPdI?rel=0" frameborder="0" allowfullscreen></iframe>
+      		</div>
+      
+      
+      
+    <!-- end page content or wizard -->
+    <!-- page footer -->
+    
+    <!-- end page footer -->
+    <!-- design footer 1 -->
+    
+    <!-- end design footer 1 -->
+    <!-- section footer -->
+    
+    <!-- end section header -->
+    <!-- site footer -->
+    
+    <!-- end site footer -->
+    
+    <!-- design footer 2 -->
+    </div><!--/ #main -->
+   		
+   		<div class="clearfixbr"></div>
+   
+   </div><!--/ .wrap -->
+</div><!--/ #bottom --> 
+    <!-- end design footer 2 -->  
+		<!-- design Global Footer Include -->
+		
+<div id="footer">
+   <div class="wrap clearfix">
+	
+		<div id="footer-nav">
+		
+			<ul class="clearfix">
+				<li><a href="http://www.bkstr.com/webapp/wcs/stores/servlet/StoreCatalogDisplay?catalogId=10001&langId=-1&storeId=10516&demoKey=d" target="_blank">Bookstore</a></li>
+				<li><a href="http://intraweb.stockton.edu/eyos/page.cfm?siteID=86&pageID=1">Library</a></li>
+				<li><a href="http://intraweb.stockton.edu/eyos/page.cfm?siteID=27&pageID=50&action=jpmain">Employment</a></li>
+				<li><a href="/eyos/page.cfm?siteID=197&pageID=40">Safety Information</a></li>
+				<li><a href="http://intraweb.stockton.edu/eyos/page.cfm?siteID=178&pageID=8&action=press">News Archive</a></li>
+				<li><a href="/eyos/page.cfm?siteID=197&pageID=33">Statements & Policies</a></li>
+				<li class="last"><a href="/eyos/page.cfm?siteID=197&pageID=29">Doing Business With Stockton</a></li>
+			</ul>
+		
+		</div><!--/ #footer-nav -->
+		
+		<div id="footer-left" class="clearfix">
+		
+			<a href="/eyos/page.cfm?siteID=201&pageID=1"><img src="http://intraweb.stockton.edu/eyos/uniheadfoot/logo-circle.jpg" width="119" height="117" alt="Visit the Office of the President" /></a>
+			
+		<p id="mission-statement">Stockton College is an <br>undergraduate and graduate<br>college of the arts, sciences and<br>professional studies. <br /><br /><span style="font-size:13px;font-style:normal;font-weight:bold;font-family:Verdana;"></span></p>		
+		</div><!--/ #footer-left -->
+		
+		<div id="footer-right">
+		
+			<img src="http://intraweb.stockton.edu/eyos/hp/images/logo-small.gif" width="156" height="25" alt="Stockton College" />
+			
+			<div id="address">
+				<p>101 Vera King Farris Drive<br />
+Galloway, NJ 08205-9441<br />
+				(609) 652-1776</p>
+				<p class="map"><a href="/eyos/page.cfm?siteID=94&pageID=4">Maps & Directions</a></p>
+			</div><!--/ #address -->
+			
+			<div align="right" id="nj-green-college">
+<p><span style="font-size:13px;font-style:normal;font-weight:bold;font-family:Verdana;">Visit the <a href="/eyos/page.cfm?siteID=201&pageID=1">Office of the President</a></span></p>
+
+			  <p><a href="/eyos/page.cfm?siteID=172&pageID=1"><img src="http://intraweb.stockton.edu/eyos/hp/images/logo-nj-green-college.gif" width="152" height="34" alt="New Jersey's Green College" border="0" /></a></p>
+			  		</div>			
+			<div align="right" id="go-stockton"><a href="https://intraweb.stockton.edu/eyos/page.cfm?siteID=160&pageID=1"><img src="http://intraweb.stockton.edu/eyos/hp/images/logo-go-stockton.gif" width="150" height="31" alt="Go Stockton" border="0" /></a></div>
+			
+			<div align="right" id="social-links">
+				<ul class="clearfix">
+					<li><a href="http://www.youtube.com/stocktoncollegenj" target="_top"><img src="http://intraweb.stockton.edu/eyos/hp/images/icon-youtube.jpg" width="32" height="32" alt="YouTube" /></a></li>
+										<li><a href="http://www.facebook.com/richardstocktoncollege" target="_top"><img src="http://intraweb.stockton.edu/eyos/hp/images/icon-facebook.png" width="32" height="32" alt="Facebook" /></a></li>
+<li><a href="http://www.twitter.com/Stockton_edu" target="_top"><img src="http://intraweb.stockton.edu/eyos/hp/images/t_logo.png" width="32" height="32" alt="Twitter" /></a></li>
+				</ul>
+			</div>
+		
+		</div><!--/ #footer-right -->
+		
+	
+<div id="footer-end" class="clearfix">
+			<p id="copyright">© 2014 The Richard Stockton College of New Jersey</p>
+			<p align="right">The Richard Stockton College of New Jersey Is an Equal Opportunity Institution</p>
+		</div>
+	
+   </div><!--/ .wrap -->
+</div><!--/ #footer1 --> 
+		<!-- end design Global Footer Include -->
+		  
+    <!-- End page content -->
+</body>
+</html>
+
