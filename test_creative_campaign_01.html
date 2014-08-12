@@ -83,14 +83,17 @@ body {
 	border-bottom: 1px solid #d9d9d9
 }
 
+#celebrate-message, #celebrate-documents {
+	margin: 0 10px;
+}
 #celebrate-hd {
 	height: 100px;
 	background-color: #ff0000;
 }
 #celebrate-message {
-	text-align: center;
 }
 #celebrate-video {
+	margin-bottom: 20px;
 	position: relative;
     padding-bottom: 56.25%;
     padding-top: 30px; height: 0; overflow: hidden;
@@ -101,6 +104,23 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.wordmark img {
+	display: block;
+	margin: 0 auto;
+}
+#side-nav ul {
+	list-style: none;
+	margin: 10px 20px;
+	padding: 0;
+	background-color: #fafafa;
+	border: 1px solid #d9d9d9;
+	border-bottom: none;
+}
+#side-nav ul li {
+	padding: 16px 20px;
+	border-bottom: 1px solid #d9d9d9
 }
 
 #footer-nav ul {
@@ -177,13 +197,30 @@ body {
 		border-bottom: none;
 	}
 	
+	#celebrate-message, #celebrate-documents {
+		margin: 0;
+	}
 	#celebrate-message {
 		float: left;
 		width: 50%;
 		text-align: left;
 	}
 	#celebrate-documents {
-		margin-left: 50%;
+		margin-left: 50%; 
+	}
+	#celebrate-documents ul {
+		list-style: none;
+	}
+	#celebrate-documents li {
+		height: 80px;
+		margin: 10px 0;
+		border: 1px solid #ccc;
+		background-color: #f7f7f7;
+	}
+	
+	#side-nav ul {
+		background: none;
+		border: none;
 	}
 	
 	#footer-nav ul {
@@ -409,7 +446,7 @@ function celebrateCampaignClear() {
       
       		<div id="celebrate-hd"></div>
       		<div id="celebrate-message">
-      			<p>Campaign Celebration brief message.</p> 
+      			<p>Beginning in 2003 and taking shape in 2007, under the direction and leadership of President Herman Saatkamp, a campaign was envisioned to foster engagement between the strategic directions of the College and the interests and aspirations of potential donors. In September 2011, with $12.9 million already committed, the campaign was publicly announced as the You Make the Difference: The Campaign for Stockton College.  The goal was to raise $20 million by June 30, 2014.  Scholarships, need-based financial aid and funds that support the efforts to enhance academic and student programming were our highest priorities. Together thousands of supporters, with gifts large and small, have combined to make a difference to countless students, faculty and staff at Stockton. The impact made during the campaign will propel Stockton into the future. </p> 
       		</div>
       		<div id="celebrate-documents">
       			<ul>
@@ -418,6 +455,7 @@ function celebrateCampaignClear() {
       				<li><a href="#">Meet our Donors</a></li>
       			</ul>
       		</div>
+      		<div class="clearfixbr"></div>
       		<div id="celebrate-video">
       			<iframe src="http://www.youtube.com/embed/s1LitGyMPdI?rel=0" frameborder="0" allowfullscreen></iframe>
       		</div>
