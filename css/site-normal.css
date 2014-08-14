@@ -1,0 +1,71 @@
+#logo {
+	padding: 0;
+	text-align: left;
+	background: none;
+}
+#logo img {
+	height: auto;
+	width: auto;
+}
+#top-nav ul, #nav ul {
+	background-color: initial;
+	border-top: none;
+}
+#top-nav ul li, #nav ul li {
+	border-bottom: none;
+}
+
+#celebrate-message, #celebrate-documents {
+	margin: 0;
+}
+#celebrate-message {
+	float: left;
+	width: 50%;
+	text-align: left;
+}
+#celebrate-documents {
+	margin-left: 50%; 
+}
+#celebrate-documents ul {
+	list-style: none;
+}
+#celebrate-documents li {
+	height: 80px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	background-color: #f7f7f7;
+}
+
+#side-nav ul {
+	background: none;
+	border: none;
+}
+
+#footer-nav ul {
+	background: none;
+	border: none;
+}
+#footer-nav ul li {
+	border: none;
+}
+#footer-left img[name="USnews"] {
+	display: initial;
+}
+#footer-left img {
+	display: initial;
+}
+#footer-right {
+	clear: none;
+}
+#footer-right #address {
+	text-align: left;
+}
+#footer-right img {
+	display: initial;
+}
+#footer-right #nj-green-college p {
+width: auto;
+float: none;
+padding: 0;
+text-align: right;
+}

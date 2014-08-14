@@ -1,0 +1,171 @@
+body {
+	margin: 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+a, a:hover {
+	font-weight: normal;
+}
+#logo {
+	padding-top: 4px;
+	text-align: center;
+	background-color: #000;
+}
+#logo img {
+	width: 143px;
+	height: 60px;
+}
+#mobile-nav-bar {
+	border-bottom: 3px solid #fdc82f;
+}
+#mobile-nav-bar span {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 6px;
+	text-indent: -9999em;
+	border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	border: 1px solid #00549F;
+}
+#mobile-nav-bar #mobile-nav-btn {
+	z-index: 500;
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	background: url(/eyos/development_and_foundation/images/mobile_nav_icon_48.png) no-repeat top left;
+	border: none;
+}
+#mobile-nav-bar #mobile-search-btn {
+	z-index: 500;
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	background: url(/eyos/development_and_foundation/images/mobile_search_icon_48.png) no-repeat top left;
+	border: none;
+}
+#mobile-nav-bar #mobile-go-btn {
+	z-index: 500;
+	position: absolute;
+	top: 0;
+	right: 48px;
+	cursor: pointer;
+	background: url(/eyos/development_and_foundation/images/mobile_go_icon_48.png) no-repeat top left;
+	border: none;
+}
+.hide {
+	display: none;
+}
+#top-nav, #search, #nav {
+	background-color: #f0f0f0;
+}
+#top-nav ul, #nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-color: #f7f7f7;
+	border-top: 1px solid #d9d9d9;
+}
+#top-nav ul li, #nav ul li {
+	padding: 16px 20px;
+	border-bottom: 1px solid #d9d9d9
+}
+
+#celebrate-message, #celebrate-documents {
+	margin: 0 10px;
+}
+#celebrate-hd {
+	height: 100px;
+	background-color: #ff0000;
+}
+#celebrate-message {
+}
+#celebrate-video {
+	margin-bottom: 20px;
+	position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+#celebrate-video iframe {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wordmark img {
+	display: block;
+	margin: 0 auto;
+}
+#side-nav ul {
+	list-style: none;
+	margin: 10px 20px;
+	padding: 0;
+	background-color: #fafafa;
+	border: 1px solid #d9d9d9;
+	border-bottom: none;
+}
+#side-nav ul li {
+	padding: 16px 20px;
+	border-bottom: 1px solid #d9d9d9
+}
+
+#footer-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-color: #f7f7f7;
+	border-top: 1px solid #d9d9d9;
+}
+#footer-nav ul li {
+	padding: 16px 20px;
+	border-bottom: 1px solid #d9d9d9;
+}
+#footer-left img {
+	margin: 6px 8px 6px 6px;
+}
+#footer-left p#mission-statement {
+	float: right;
+	font-family: Georgia,times,serif;
+	font-style: italic;
+}
+#footer-left img[name="USnews"] {
+	display: none;
+}
+#footer-right {
+	clear: both;
+}
+#footer-right #address {
+	text-align: center;
+}
+#footer-right > img {
+	display: none;
+}
+#footer-right #go-stockton {
+	float: right;
+}
+#footer-right #social-links {
+	text-align: left;
+}
+#footer-right #social-links ul {
+	padding: 0;
+	list-style: none;
+}
+#footer-right #social-links li {
+	display: inline;
+	padding: 10px;
+}
+#footer-right #nj-green-college p {
+	width: 45%;
+	float: left;
+	padding: 0 10px;
+	text-align: left;
+}
+#footer-end {
+	font-size: 85%;
+	text-align: center;
+	color: #bfbfbf;
+}
